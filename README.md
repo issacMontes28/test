@@ -23,7 +23,7 @@ composer install
 Make a copy of `.env.example` and rename it to `.env`
 
 ### Populating database
-Create a database name 'test2' or modify the .env file to your convenience
+Create a database named 'test2' or modify the .env file to your convenience
 
 Execute migrations
 
