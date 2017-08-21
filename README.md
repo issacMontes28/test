@@ -19,7 +19,27 @@ Install composer dependencies
 composer install
 ```
 
+
 Make a copy of `.env.example` and rename it to `.env`
+
+### Populating database
+Create a database name 'test2' or modify the .env file to your convenience
+
+Execute migrations
+
+```bash
+php artisan migrate
+```
+
+Make sure the method setpictureAttribute() in Product model is comented and execute next:
+
+
+```bash
+php artisan db:seed --class=MerchTypeTableSeeder
+php artisan db:seed --class=ProductsTableSeeder
+```
+
+Uncomment the method above mentioned
 
 ### Using Homestead
 
@@ -30,5 +50,3 @@ sudo vendor/bin/homestead make
 ```
 
 ##### Windows user may need to review detailed instructions on the Homestead documentation
-
-
